@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil Chintha | Portfolio</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    html { scroll-behavior: smooth; }
+    section { padding: 60px 10%; }
+    h2 { margin-bottom: 20px; }
+    .projects ul { list-style: square; padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="head">
+      <h2>Hi, I’m Nikhil Chintha</h2>
+      <div class="atags">
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#accomplishments">ACCOMPLISHMENTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <button><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+<!-- About Section -->
+<section id="about" class="ABOUT">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <!-- Profile Picture -->
+    <div class="about-img"></div>
+
+    <!-- About Text -->
+    <div class="about-text">
+      <p>
+        Aspiring Software Engineer with strong skills in Python, Java, and Machine Learning.
+        Experienced in building full-stack web applications (Flask, SQL, REST APIs), deploying projects,
+        and applying deep learning models to real-world problems. Passionate about problem solving
+        and continuous learning.
+      </p>
+      <a href="{{ url_for('static', filename='nikhil_resume.pdf') }}" download class="resume-btn">
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Java (Proficient), Python, C</li>
+      <li><strong>Web Development:</strong> HTML, CSS</li>
+      <li><strong>Android:</strong> Kotlin (basic)</li>
+      <li><strong>Machine Learning:</strong> Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Tensorflow, NLP</li>
+      <li><strong>Database & Deployment:</strong> MySQL, Git, GitHub</li>
+      <li><strong>Automation:</strong> Selenium, BeautifulSoup</li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech (CSE - AI ML)</strong> — Mallareddy College of Engineering, Hyderabad — CGPA: 8.0</p>
+    <p><strong>Intermediate MPC</strong> — SR Junior College, Hanamkonda — 926/1000</p>
+    <p><strong>SSC</strong> — Sri Kakatiya High School, Jammikunta — GPA: 10</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Crop Leaf Disease Detection (CNN)</b> — Tkinter GUI + OpenCV preprocessing (90% precision)</li>
+      <li><b>Portfolio Website (Flask)</b> — Personal portfolio with resume download — <a href="https://nikhilchintha26.pythonanywhere.com/" target="_blank">Live Link</a></li>
+      <li><b>E-Commerce Web Application</b> — Flask + SQLAlchemy + REST APIs + role-based access — 
+          <a href="https://github.com/Nikhilchintha26/E-Commerce-Web-Application-" target="_blank">GitHub</a></li>
+      <li><b>Contact Us Web App</b> — Flask + MySQL — 
+          <a href="https://github.com/Nikhilchintha26/ContactusMysql" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <!-- Accomplishments -->
+  <section id="accomplishments" class="accomplishments">
+    <h2>Accomplishments</h2>
+    <ul>
+      <li>Solved 200+ problems on Hackerrank, Leetcode, and GFG</li>
+      <li>Ranked 3rd on GeeksforGeeks coding leaderboard (B.Tech/B.E batch)</li>
+      <li>Served as Class Representative and Student Placement Coordinator</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-form">
+    <h2>Contact <span>Me</span></h2>
+    <form id="contactForm">
+      <div class="input-box">
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+      </div>
+      <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <br>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+      <a href="https://www.linkedin.com/in/nikhil-chintha"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+      <a href="https://instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://github.com/Nikhilchintha26"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p class="copyright">© 2025 Nikhil Chintha | All Rights Reserved</p>
+  </footer>
+
+  <!-- Form JS (kept from your original) -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      let form = this;
+      let formData = new FormData(form);
+      try {
+        let response = await fetch('http://127.0.0.1:5000/submit', {
+          method: 'POST', body: formData
+        });
+        let result = await response.json();
+        alert(result.success || result.error);
+        if (result.success) form.reset();
+      } catch (error) {
+        alert("Something went wrong. Please try again.");
+      }
+    });
+  </script>
+</body>
+</html>

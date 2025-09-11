@@ -1,0 +1,252 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.head {
+  height: 60px;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.head h2 {
+  color: white;
+}
+.atags a {
+  font-size: 1rem;
+  color: white;
+  padding: 8px 15px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.atags a:hover {
+  border-bottom: 2px solid red;
+  color: yellow;
+}
+button {
+  display: none; /* mobile menu can be added later */
+}
+
+/* Section Defaults */
+section {
+  padding: 80px 10%;
+}
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+  position: relative;
+}
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #fcad26;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* About Section */
+.ABOUT {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url("milky-way-2695569_1280.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 10%;
+}
+/* About Section Heading */
+.ABOUT h2 {
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+.about-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: url("passpic.jpg"); /* your profile picture */
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #fcad26;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* Skills Section */
+.skills {
+  background-color: #ffffff;
+}
+.skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.skills li {
+  background: #f4f4f4;
+  padding: 15px;
+  border-left: 5px solid #fcad26;
+  border-radius: 8px;
+}
+
+/* Education Section */
+.education {
+  background-color: #f0f8ff;
+}
+.education p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #ffffff;
+}
+.projects ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.projects li {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+/* Accomplishments */
+.accomplishments {
+  background: #fef3e2;
+}
+.accomplishments ul {
+  list-style: square;
+  padding-left: 20px;
+}
+.accomplishments li {
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #f9f9f9;
+}
+.contact-form h2 {
+  color: #333;
+}
+.contact-form form {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form .btn {
+  display: inline-block;
+  background: #fcad26;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-form .btn:hover {
+  background: #df9517;
+  transform: translateY(-2px);
+}
+
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+.footer .social a {
+  font-size: 22px;
+  color: white;
+  margin: 0 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.footer .social a:hover {
+  transform: scale(1.2);
+  color: orangered;
+}
+.footer p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Resume Download Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #fcad26;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.resume-btn:hover {
+  background: #df9517;
+  transform: translateY(-3px);
+}
+.resume-btn i {
+  margin-right: 8px;
+}
+

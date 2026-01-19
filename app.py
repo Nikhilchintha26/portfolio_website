@@ -4,25 +4,24 @@ import mysql.connector
 
 app = Flask(__name__)
 
-# Configure logging
+
 logging.basicConfig(filename="error.log", level=logging.ERROR, 
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
-# Database connection
+
 db = mysql.connector.connect(
     host="localhost",
-    user="root",        # Change if needed
-    password="nikhil26",# Change if needed
+    user="root",        
+    password="nikhil26",
     database="contact_form"
 )
 cursor = db.cursor()
 
-# Home route (portfolio site)
+
 @app.route('/')
 def home():
-    return render_template("home.html")   # Flask looks inside /templates/
+    return render_template("home.html")   
 
-# Contact form submission
 @app.route('/submit', methods=['POST'])
 def submit_form():
     try:

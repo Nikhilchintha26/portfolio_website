@@ -58,3 +58,34 @@
 2025-09-11 18:30:22,760 - INFO - 127.0.0.1 - - [11/Sep/2025 18:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-09-11 18:30:22,794 - INFO - 127.0.0.1 - - [11/Sep/2025 18:30:22] "[36mGET /static/milky-way-2695569_1280.jpg HTTP/1.1[0m" 304 -
 2025-09-11 18:30:22,796 - INFO - 127.0.0.1 - - [11/Sep/2025 18:30:22] "[36mGET /static/passpic.jpg HTTP/1.1[0m" 304 -
+2025-09-11 20:56:27,994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-11 20:56:27,995 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-11 20:56:27,998 - INFO -  * Restarting with stat
+2025-09-11 20:56:28,860 - WARNING -  * Debugger is active!
+2025-09-11 20:56:28,874 - INFO -  * Debugger PIN: 195-709-923
+2025-09-11 20:57:02,993 - INFO - 127.0.0.1 - - [11/Sep/2025 20:57:02] "GET / HTTP/1.1" 200 -
+2025-09-11 20:57:03,200 - INFO - 127.0.0.1 - - [11/Sep/2025 20:57:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-09-11 20:57:03,223 - INFO - 127.0.0.1 - - [11/Sep/2025 20:57:03] "[36mGET /static/milky-way-2695569_1280.jpg HTTP/1.1[0m" 304 -
+2025-09-11 20:57:03,258 - INFO - 127.0.0.1 - - [11/Sep/2025 20:57:03] "[36mGET /static/passpic.jpg HTTP/1.1[0m" 304 -
+2026-01-16 23:49:42,664 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-16 23:49:42,666 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-16 23:49:42,669 - INFO -  * Restarting with stat
+2026-01-16 23:49:43,517 - WARNING -  * Debugger is active!
+2026-01-16 23:49:43,530 - INFO -  * Debugger PIN: 195-709-923
+2026-01-16 23:50:18,921 - INFO - 127.0.0.1 - - [16/Jan/2026 23:50:18] "POST /submit HTTP/1.1" 200 -
+2026-01-16 23:54:40,965 - INFO - 127.0.0.1 - - [16/Jan/2026 23:54:40] "[31m[1mGET /submit HTTP/1.1[0m" 405 -
+2026-01-16 23:54:41,266 - INFO - 127.0.0.1 - - [16/Jan/2026 23:54:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-16 23:58:27,680 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-16 23:58:27,680 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-16 23:58:27,681 - INFO -  * Restarting with stat
+2026-01-16 23:58:28,459 - WARNING -  * Debugger is active!
+2026-01-16 23:58:28,483 - INFO -  * Debugger PIN: 195-709-923
+2026-01-17 00:02:09,542 - INFO - 127.0.0.1 - - [17/Jan/2026 00:02:09] "GET / HTTP/1.1" 200 -
+2026-01-17 00:02:09,741 - INFO - 127.0.0.1 - - [17/Jan/2026 00:02:09] "GET /static/style.css HTTP/1.1" 200 -
+2026-01-17 00:02:09,761 - INFO - 127.0.0.1 - - [17/Jan/2026 00:02:09] "GET /static/milky-way-2695569_1280.jpg HTTP/1.1" 200 -
+2026-01-17 00:02:09,786 - INFO - 127.0.0.1 - - [17/Jan/2026 00:02:09] "GET /static/passpic.jpg HTTP/1.1" 200 -
+2026-01-17 00:02:10,046 - INFO - 127.0.0.1 - - [17/Jan/2026 00:02:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-17 00:02:20,152 - INFO - 127.0.0.1 - - [17/Jan/2026 00:02:20] "GET /static/nikhil_resume.pdf HTTP/1.1" 200 -
